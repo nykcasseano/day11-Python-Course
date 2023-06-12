@@ -11,3 +11,7 @@ else:
 
 #Hint 12: Once the user is done and no longer wants to draw more cards, it's time to let the cumputer play. The computer wshould keep drawing cards as long as it has a score less than 17.
 
+while computer_score !=0 and computer_score < 17:
+    computer_cards.append(deal_card())
+    computer_score = calculate_score(computer_cards)
+    
